@@ -1,0 +1,19 @@
+To set up a development environment, you can use the pdm package manager:
+
+(pdm install)
+
+To run the tests, you can use the pytest package:
+
+(pytest tests/)
+(The `my_ai_package` directory contains the actual code for your package. The `openai_api.py` file contains a class that wraps the OpenAI API:
+```python
+import os
+from prefect_openai import OpenAI
+
+class OpenAIAPI:
+    def __init__(self, api_key: str):
+        self.api = OpenAI(api_key=api_key)
+
+    def generate_image(self, prompt: str) -> bytes:
+        response = self.api.create_image(prompt=prompt)
+        return response.content)

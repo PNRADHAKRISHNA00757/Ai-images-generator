@@ -1,0 +1,21 @@
+[tool.pdm]
+name = "my-ai-package"
+version = "0.1.0"
+description = "A Python package for generating AI images"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/PNRADHAKRISHNA00757/Ai-images-generator.git"
+repository = "https://github.com/PNRADHAKRISHNA00757/Ai-images-generator.git"
+keywords = ["ai", "image", "generation", "openai"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.pdm.build]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
